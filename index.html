@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tikla Babam Tikla</title>
+</head>
+
+<body bgcolor="#2e8f8a"></body>
+
+<body>
+  <div style="max-width:600px;margin: 10px auto;">
+    <div id="command" style="height: 2em">
+      <b>Seviye 1:</b> Gorsel uzerinde herhangi bir yere tikla. Ardindan <b>Sonraki</b> tusuna bas.
+    </div>
+    <img id="image" src="easy.png" width=577 height=399 onclick="process(event);return false;" ondragstart="return false">
+    <div style="text-align: center"><button onclick="next();" style="font-size:150%">Sonraki</button></div>
+    <br/>
+    Action log:<br/>
+    <textarea id="log" rows="10" cols="70"></textarea>
+  </div>
+  <script src="data.js"></script>
+  <script src="code.js"></script>
+</body>
+</html>
+
